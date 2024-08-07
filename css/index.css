@@ -1,0 +1,191 @@
+/* VARIABLES PARA LOS COLORES */
+:root{
+    --white: #ffffff;
+    --black: #202020;
+    --yellow: #F9B233;
+}
+/* FUENTES (BODY Y TITUS) */
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap.woff2') format('.woff2');
+}
+
+@font-face {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+}
+
+*{
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.banner{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+h1, h2 {    
+    font-family: "Abril Fatface", serif;
+}
+
+h2{
+    font-size: xx-large;
+    text-align: center;
+}
+
+h3{    
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+}
+
+h4{
+    font-size: x-large;
+}
+
+span{
+    font-size: 20px;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+main{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+hr{
+    border-top: 1px dashed;
+}
+
+/* SECTIONS PRE TITU */
+    .pre_titu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-bottom: -30px;
+        }
+    
+    .pre1 {grid-area: 1 / 1 / 2 / 2;}
+    .pre2 {
+        grid-area: 1 / 2 / 2 / 3;
+        text-align: right;
+    }
+
+/* SECTIONS SUB TITU */
+    .sub_titu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+    
+    .sub_titu_txt { grid-area: 1 / 1 / 2 / 2; }
+    .hastags { grid-area: 1 / 2 / 2 / 6; }
+
+    .body_hastags{
+        font-size: medium;
+        font-weight: normal;
+        padding: 16px;
+        margin-right: 8px;
+        background-color: var(--black);
+        color: var(--white);
+        border: 0;
+        border-radius: 24px;
+    }
+
+/* MENU DE NAVEGACION */
+    .logo_nav{
+        height: 30px;
+    }
+
+    .navbar{
+        /*El contenido que se salga del elemento no se ve*/
+        overflow: hidden;
+    }
+
+    .navbar a{
+        float: left;
+        display: block;
+        padding: 10px;
+        color: var(--black);
+        text-decoration: none;
+    }
+
+    .navbar a:hover{
+        color: var(--yellow);
+        font-weight: bold;
+    }
+
+    .navbar .icon {
+        display: none;
+        font-weight: bold;
+    }
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 16px;
+}
+
+/* RESPONSIVE MOVIL */
+@media screen and (max-width:767px) {
+/* MENU BURGUER */
+    .navbar a:not(:first-child){
+        display: none;
+    }
+
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
+
+    /* SE EVITAN LOS ESPACIOS PORQUE SI NO CONSIDERA LAS CLASES COMO ANIDADAS */
+    .navbar.responsive{
+        position: relative;
+    }
+
+    .navbar.responsive.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+}
+
+/* RESPONSIVE PC */
+@media screen and (min-width: 1024px){
+    
+}
