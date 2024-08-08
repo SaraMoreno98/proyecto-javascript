@@ -2,6 +2,7 @@
 :root{
     --white: #ffffff;
     --black: #202020;
+    --grey: #414141;
     --yellow: #F9B233;
 }
 /* FUENTES (BODY Y TITUS) */
@@ -71,6 +72,19 @@ main{
     margin-left: 5%;
     margin-right: 5%;
 }
+.btn{
+    font-size: medium;
+    font-weight: normal;
+    padding: 16px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 0;
+    border-radius: 24px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
 
 hr{
     border-top: 1px dashed;
@@ -109,7 +123,7 @@ hr{
         font-weight: normal;
         padding: 16px;
         margin-right: 8px;
-        background-color: var(--black);
+        background-color: var(--grey);
         color: var(--white);
         border: 0;
         border-radius: 24px;
