@@ -236,6 +236,7 @@ hr{
     .footer_row {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .logo_footer {
