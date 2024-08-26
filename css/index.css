@@ -34,6 +34,18 @@ header{
     height: 400px;
 }
 
+.parallax{
+    margin-bottom: 24px;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1, h2 {    
     font-family: "Abril Fatface", serif;
 }
@@ -73,10 +85,10 @@ a:hover{
     font-weight: bold;
 }
 
-main{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+.main{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
 .btn{
     font-size: medium;
@@ -284,7 +296,7 @@ footer{
 }
 
 /* RESPONSIVE MOVIL */
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px){
 /* MENU BURGUER */
     .navbar a:not(:first-child){
         display: none;
@@ -310,15 +322,115 @@ footer{
         float: none;
         display: block;
         text-align: left;
+        color: var(--white);
+        background-color: var(--black);
+    }
+
+/* ABOUT */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .img { grid-area: 1 / 1 / 2 / 6; }
+
+    .txt_about { grid-area: 2 / 1 / 3 / 6;}
+
+    .portrait{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+/* HABILIDADES */    
+    .habs {
+        width: 100%;
+    }
+
+/* FOOTER */
+    .footer_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo_footer {
+        background-color: none;
+        width: 70%;
+    }
+
+    .txt_footer{
+        padding-right: 16px;
+        text-align: left;
+    }
+
+    .redes_footer{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .enlace_footer{
+        margin-top: 32px;
     }
 }
 
 /* RESPONSIVE TABLET */
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    .navbar{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+/* RESPONSIVE MOVIL Y TABLET */
+@media screen and (max-width: 1023px){
+    /* SECTIONS SUB TITU */
+    .sub_titu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
     
+    .sub_titu_txt { grid-area: 1 / 1 / 2 / 6; }
+    .hastags { grid-area: 2 / 1 / 3 / 6; }
+
+    .body_hastags{
+        font-size: medium;
+        font-weight: normal;
+        padding: 16px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        background-color: var(--grey);
+        color: var(--white);
+        border: 0;
+        border-radius: 24px;
+    }
+
 }
 
 /* RESPONSIVE PC */
+    /* CENTRADO NAV BAR */
+    @media screen and (min-width: 1024px) and (max-width: 1439){
+        .navbar{
+            text-align: center;
+            margin-left: 33%;
+            margin-right: 33%;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        .navbar{
+            margin-left: 38%;
+            margin-right: 38%;
+        }
+    }
+
 @media screen and (min-width: 1024px){
     
 }

@@ -11,7 +11,9 @@
 
 <body>
     <header>
-        <h1>Sara Moreno Ontiveros <span>{Diseñadora Gráfica | Web Developer}</span></h1>
+        <h1>Sara Moreno Ontiveros <span>{Diseñadora Gráfica | FrontEnd Developer}</span></h1>
+    </header>
+
     <!-- MENU DE NAVEGACION -->
         <nav class="navbar" id="myNavbar">
             <a href="#index"><img class="logo_nav" src="img/LOGO2024_3-1024x1024.png" alt="Logo"></a>
@@ -20,12 +22,11 @@
             <a href="#contact">Hablamos</a>
             <a href="javascript:void(0)" class="icon" id="burguer">&#9776;</a>
         </nav>
-    </header>
 
     <!-- BANNER -->
-    <img class="banner" src="img/alexander-psiuk-utfiDJBebHw-unsplash.jpg" alt="banner">
+     <div id="parallax" class="parallax"></div>
 
-    <main>
+    <div class="main">
     <!-- MI TRABAJO -->
         <section>
         <!-- PRE TITU -->
@@ -80,7 +81,9 @@
         <!-- IMG + TXT -->
             <div class="about">
                 <div class="img">
-                    <img class="portrait" src="img/IMG_20211015_142627-scaled-qpsfjyj1rmmfq7ldmy8d1d4ngo8xc4mbqhhpck4www.jpg" alt="">
+                    <center>
+                        <img class="portrait" src="img/IMG_20211015_142627-scaled-qpsfjyj1rmmfq7ldmy8d1d4ngo8xc4mbqhhpck4www.jpg" alt="">
+                    </center>
                 </div>
                 <div class="txt_about">
                     <p>Como diseñadora gráfica, encuentro fascinante cómo la tecnología y el diseño se combinan para hacer posible lo que antes parecía imposible.</p>
@@ -132,7 +135,7 @@
             </div>
             <center><a href= "https://saramoreno.estaciondiseno.es/index.php/hablemos/" target="_blank"><button class="btn">¿HABLAMOS?</button></a></center>
         </section>
-    </main>
+    </div>
 
     <footer>
         <div>
@@ -153,9 +156,11 @@
                 <a href="" target="_blank"><img src="img/brand-linkedin.svg" alt=""></a>
             </div>
         </div>
-        <a href="https://saramoreno.estaciondiseno.es/" target="_blank">&COPY; Sara Moreno Ontiveros | The Designing Bee</a>
+        <div class="enlace_footer">
+            <a href="https://saramoreno.estaciondiseno.es/" target="_blank">&COPY; Sara Moreno Ontiveros | The Designing Bee</a>
+        </div>
     </footer>
 
-    <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
