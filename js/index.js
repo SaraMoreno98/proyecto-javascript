@@ -30,7 +30,7 @@ const products = [
     { id: 1, name: "Ilustración", price: 19.99},
     { id: 2, name: "Cartelería", price: 29.99},
     { id: 3, name: "Logotipo", price: 49.99},
-    { id: 4, name: "Branding", price: 79.99},
+    { id: 4, name: "Branding", price: 89.99},
     { id: 5, name: "Diseño Web", price: 59.99}
 ]
 
