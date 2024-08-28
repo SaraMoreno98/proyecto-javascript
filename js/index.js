@@ -25,6 +25,9 @@ let burguerResponsive = document.getElementById('burguer')
         }
     })
 
+// BANNER SLIDER
+
+
 // CARRITO
 const products = [
     { id: 1, name: "Ilustración", price: 19.99},
