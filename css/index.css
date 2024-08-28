@@ -163,6 +163,10 @@ hr{
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
+
+    .sub_titu h4{
+        margin-bottom: -30px;
+    }
     
     .sub_titu_txt { grid-area: 1 / 1 / 2 / 2; }
     .hastags { grid-area: 1 / 2 / 2 / 6; }
@@ -202,6 +206,23 @@ hr{
         margin: 24px;
         color: rgb(238, 80, 80);
         font-size: small;
+    }
+
+    .btn_carrito{
+        cursor: pointer;
+        width: 80%;
+        margin-top: 8px;
+        margin-left: 10%;
+        padding: 10px;
+        display: inline-block;
+        background-color: var(--yellow);
+        color: var(--grey);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 16px;
     }
 
     .btn-servs:hover{
@@ -276,9 +297,11 @@ hr{
         transition: right 0.3s ease-in-out;
         overflow-y: auto;
     }
+
     #cart.open {
         right: 0;
     }
+
     #cart h2 {
         font-family: "Poppins", sans-serif;
         padding: 20px;
@@ -286,9 +309,11 @@ hr{
         background-color: var(--grey);
         color: white;
     }
+
     #cart-items {
         padding: 20px;
     }
+
     #cart-items .cart-item {
         display: flex;
         justify-content: space-between;
@@ -297,6 +322,7 @@ hr{
         border-bottom: 1px solid #ddd;
         padding-bottom: 10px;
     }
+
     #cart-items .cart-item button {
         background-color: #f44336;
         border: none;
@@ -310,11 +336,13 @@ hr{
         cursor: pointer;
         border-radius: 4px;
     }
+
     #cart-total {
         padding: 20px;
         font-weight: bold;
         font-size: 18px;
     }
+
     #toggle-cart {
         position: fixed;
         right: 20px;
