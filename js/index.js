@@ -1,5 +1,5 @@
 //BANNER
-document.getElementById('parallax').style.backgroundImage = "url('../img/alexander-psiuk-utfiDJBebHw-unsplash.jpg')"
+document.getElementById('parallax').style.backgroundImage = "url('../img/iffah-suhaili-lHnC9Yg_J3Q-unsplash.jpg')"
 
 // FUNCION PARA CONTROLAR LA VELOCIDAD DEL SCROLL
 window.addEventListener('scroll', function(){
