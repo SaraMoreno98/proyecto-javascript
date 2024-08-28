@@ -179,9 +179,9 @@ hr{
     }
 
 /* PORTFOLIO */
-    .margin_trabajo{
+    /* .margin_trabajo{
         margin-bottom: -80px;
-    }
+    } */
 
     .trabajamos-servicios {
         display: flex;
@@ -212,58 +212,64 @@ hr{
     
     /* CARRITO */
     .container {
-        max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
     }
+
     .products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
+
     .product-card {
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         margin: 10px;
         padding: 15px;
         width: 250px;
     }
-    .product-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
+    
     .product-card h3 {
         margin: 10px 0;
     }
+
     .product-card p {
         margin: 5px 0;
     }
+
     .product-card select {
         margin: 10px 0;
         width: 100%;
     }
+
     .product-card button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
+        cursor: pointer;
+        width: 80%;
+        margin-top: 8px;
+        margin-left: 10%;
         padding: 10px;
+        display: inline-block;
+        background-color: var(--grey);
+        color: white;
+        font-size: 16px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 4px;
-        width: 100%;
+        border: none;
+        border-radius: 16px;
     }
+
+    .product-card button:hover {
+        color: var(--grey);
+        background-color: var(--yellow);
+        margin-left: 0%;
+        width: 100%;
+        transition: all 0.2s ease-in;
+    }
+
     #cart {
         position: fixed;
-        right: -300px;
+        right: -350px;
         top: 0;
-        width: 300px;
+        width: 350px;
         height: 100%;
         background-color: white;
         box-shadow: -2px 0 5px rgba(0,0,0,0.1);
@@ -274,9 +280,10 @@ hr{
         right: 0;
     }
     #cart h2 {
+        font-family: "Poppins", sans-serif;
         padding: 20px;
         margin: 0;
-        background-color: #4CAF50;
+        background-color: var(--grey);
         color: white;
     }
     #cart-items {
