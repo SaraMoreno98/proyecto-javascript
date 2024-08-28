@@ -28,10 +28,10 @@ let burguerResponsive = document.getElementById('burguer')
 // CARRITO
 const products = [
     { id: 1, name: "Ilustración", price: 19.99},
-    { id: 2, name: "Cartelería", price: 19.99},
-    { id: 3, name: "Logotipo", price: 19.99},
-    { id: 4, name: "Branding", price: 19.99},
-    { id: 5, name: "Diseño Web", price: 19.99}
+    { id: 2, name: "Cartelería", price: 29.99},
+    { id: 3, name: "Logotipo", price: 49.99},
+    { id: 4, name: "Branding", price: 79.99},
+    { id: 5, name: "Diseño Web", price: 59.99}
 ]
 
 const productosContainer = document.getElementById ('products')
@@ -48,7 +48,7 @@ function renderizarProductos(){
     let productosHTML = products.map(producto => `
         <div class="product-card">
             <h3>${producto.name}</h3>
-            <p>Precio: ${producto.price}€</p>
+            <p>Precio: ${producto.price} €</p>
             <button onclick="addCarrito(${producto.id})">Añadir al carrito</button>
         </div>    
     `)
@@ -69,13 +69,13 @@ function addCarrito(productoId){
 function updateCarrito(){
     itemCarrito.innerHTML = cartProductos.map((item, index) => `
         <div class="cart-item">
-            <span>${item.name} - ${item.price.toFixed(2)}€</span>
+            <span>${item.name} - ${item.price.toFixed(2)} €</span>
             <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
         </div>
     `).join('')
 
     const total = cartProductos.reduce((sum, item) => sum + item.price, 0)
-    totalCarrito.textContent = `Total ${total.toFixed(2)}€`
+    totalCarrito.textContent = `Total ${total.toFixed(2)} €`
 
     if (cartProductos.length === 0){
         contador.textContent = ''
