@@ -26,7 +26,38 @@ let burguerResponsive = document.getElementById('burguer')
     })
 
 // BANNER SLIDER
+const images = [
+    '../img/austin-gardner-7fElVDKXLoQ-unsplash.jpg',
+    '../img/dimitry-b-uDl5opHop7E-unsplash.jpg',
+    '../img/gines-sanchez-39a0qT-UA08-unsplash.jpg',
+    '../img/iffah-suhaili-rb672Yi99qc-unsplash.jpg',
+    '../img/sebastian-yepes-OdwjaP3GpqQ-unsplash.jpg',
+    '../img/sergio-rota-BObeW7-d6fk-unsplash.jpg',
+    '../img/sergio-rota-BObeW7-d6fk-unsplash.jpg'
+]
 
+const slidesContainer = document.getElementById('slides')
+
+    // CARGAR IMGS DINAMICAMENTE
+    images.forEach(src => {
+        const img = document.createElement('img')
+        img.src = src
+        slidesContainer.appendChild(img)
+    })
+
+    let index = 0
+
+    function showNextImage(){
+        index++
+        if (index >= images.length) {
+            index = 0
+        }
+        const offset = -index * 100
+        slidesContainer.style.transform = `translateX(${offset}%)`
+    }
+
+    //CONFIGURAR EL SLIDER PARA QUE SE MUEVA AUTOMATICAMENTE
+    setInterval(showNextImage, 3000)
 
 // CARRITO
 const products = [
