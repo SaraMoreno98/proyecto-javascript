@@ -183,7 +183,23 @@ hr{
     }
 
 /* BANNER SLIDER */
+    .slider{
+        width: 80%;
+        max-width: 800px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
+    .slides{
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img{
+        width: 100%;
+        border-radius: 10px;
+    }
 
 /* PORTFOLIO */
     /* .margin_trabajo{
