@@ -92,6 +92,7 @@ a:hover{
 }
 
 .btn{
+    margin-top: 16px;
     font-size: medium;
     font-weight: normal;
     padding: 16px;
@@ -184,8 +185,9 @@ hr{
 
 /* BANNER SLIDER */
     .slider{
-        width: 80%;
+        width: 100%;
         max-width: 800px;
+        height: 300px;
         overflow: hidden;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -198,7 +200,6 @@ hr{
 
     .slides img{
         width: 100%;
-        border-radius: 10px;
     }
 
 /* PORTFOLIO */
