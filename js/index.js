@@ -26,38 +26,71 @@ let burguerResponsive = document.getElementById('burguer')
     })
 
 // BANNER SLIDER
-const images = [
-    '../img/austin-gardner-7fElVDKXLoQ-unsplash.jpg',
-    '../img/dimitry-b-uDl5opHop7E-unsplash.jpg',
-    '../img/gines-sanchez-39a0qT-UA08-unsplash.jpg',
-    '../img/iffah-suhaili-rb672Yi99qc-unsplash.jpg',
-    '../img/sebastian-yepes-OdwjaP3GpqQ-unsplash.jpg',
-    '../img/sergio-rota-BObeW7-d6fk-unsplash.jpg',
-    '../img/sergio-rota-BObeW7-d6fk-unsplash.jpg'
-]
+    // SLIDER 1
+    const images = [
+        '../img/austin-gardner-7fElVDKXLoQ-unsplash.jpg',
+        '../img/dimitry-b-uDl5opHop7E-unsplash.jpg',
+        '../img/gines-sanchez-39a0qT-UA08-unsplash.jpg',
+        '../img/iffah-suhaili-rb672Yi99qc-unsplash.jpg',
+        '../img/sebastian-yepes-OdwjaP3GpqQ-unsplash.jpg',
+        '../img/sergio-rota-BObeW7-d6fk-unsplash.jpg'
+    ]
 
-const slidesContainer = document.getElementById('slides')
+    const slidesContainer = document.getElementById('slides')
 
-    // CARGAR IMGS DINAMICAMENTE
-    images.forEach(src => {
-        const img = document.createElement('img')
-        img.src = src
-        slidesContainer.appendChild(img)
-    })
+        // CARGAR IMGS DINAMICAMENTE
+        images.forEach(src => {
+            const img = document.createElement('img')
+            img.src = src
+            slidesContainer.appendChild(img)
+        })
 
-    let index = 0
+        let index = 0
 
-    function showNextImage(){
-        index++
-        if (index >= images.length) {
-            index = 0
+        function showNextImage(){
+            index++
+            if (index >= images.length) {
+                index = 0
+            }
+            const offset = -index * 100
+            slidesContainer.style.transform = `translateX(${offset}%)`
         }
-        const offset = -index * 100
-        slidesContainer.style.transform = `translateX(${offset}%)`
-    }
 
-    //CONFIGURAR EL SLIDER PARA QUE SE MUEVA AUTOMATICAMENTE
-    setInterval(showNextImage, 3000)
+        //CONFIGURAR EL SLIDER PARA QUE SE MUEVA AUTOMATICAMENTE
+        setInterval(showNextImage, 3000)
+
+    // SLIDER 2
+    const images2 = [
+        '../img/austin-gardner-7fElVDKXLoQ-unsplash.jpg',
+        '../img/dimitry-b-uDl5opHop7E-unsplash.jpg',
+        '../img/gines-sanchez-39a0qT-UA08-unsplash.jpg',
+        '../img/iffah-suhaili-rb672Yi99qc-unsplash.jpg',
+        '../img/sebastian-yepes-OdwjaP3GpqQ-unsplash.jpg',
+        '../img/sergio-rota-BObeW7-d6fk-unsplash.jpg'
+    ]
+
+    const slidesContainer2 = document.getElementById('slides2')
+
+        // CARGAR IMGS DINAMICAMENTE
+        images2.forEach(src => {
+            const img = document.createElement('img')
+            img.src = src
+            slidesContainer2.appendChild(img)
+        })
+
+        let index2 = 0
+
+        function showNextImage2(){
+            index2++
+            if (index2 >= images2.length) {
+                index2 = 0
+            }
+            const offset2 = -index2 * 100
+            slidesContainer2.style.transform = `translateX(${offset2}%)`
+        }
+
+        //CONFIGURAR EL SLIDER PARA QUE SE MUEVA AUTOMATICAMENTE
+        setInterval(showNextImage2, 3000)
 
 // CARRITO
 const products = [
