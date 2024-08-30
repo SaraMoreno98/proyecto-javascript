@@ -28,24 +28,6 @@ header{
     text-align: center;
 }
 
-.banner{
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-}
-
-.parallax{
-    margin-bottom: 24px;
-    height: 400px;
-    background-attachment: fixed;
-    background-position: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 h1, h2 {    
     font-family: "Abril Fatface", serif;
 }
@@ -110,6 +92,41 @@ hr{
     border-top: 1px dashed;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+/* SALUDO */
+#saludo{
+    padding: 24px;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+}
+
+/* BANNER PARALLAX */
+.banner{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.parallax{
+    margin-bottom: 24px;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(80%);
+}
+
+.content_parallax{
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* MENU DE NAVEGACION */

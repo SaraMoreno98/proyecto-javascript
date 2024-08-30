@@ -1,3 +1,39 @@
+// FUNCION PARA QUE LA WEB SE DESPLACE AL PULSAR EL TABULADOR
+document.addEventListener('keydown', function(event) {
+    // Comprobar si la tecla pulsada es el tabulador
+    if (event.key === 'Tab') {
+        // Prevenir el comportamiento por defecto del tabulador
+        event.preventDefault();
+
+        // Desplazar la página hacia abajo
+        window.scrollBy({
+            top: 300, // Desplaza 100 píxeles hacia abajo
+            left: 0,
+            behavior: 'smooth' // Hace que el desplazamiento sea suave
+        });
+    }
+});
+
+// SALUDO
+const saludoTxt = document.getElementById('saludo')
+
+window.onload = function mostrarSaludo (){
+    const hora = new Date().getHours()
+    //const hora = 20
+    parseInt(hora)
+        console.log(hora)
+
+    if(hora >= 7 && hora < 12){
+        saludoTxt.textContent = `¡Buenos días! Ten un bonito día`
+    }
+    else if (hora >= 12 && hora < 20){
+        saludoTxt.textContent = `¡Buenas tardes! Ten un bonito día`
+    }
+    else{            
+        saludoTxt.textContent = `¡Buenas noches!`
+    }
+}
+
 //BANNER
 document.getElementById('parallax').style.backgroundImage = "url('../img/iffah-suhaili-lHnC9Yg_J3Q-unsplash.jpg')"
 
