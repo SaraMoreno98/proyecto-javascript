@@ -120,7 +120,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: brightness(80%);
+    filter: brightness(90%);
 }
 
 .content_parallax{
