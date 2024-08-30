@@ -216,3 +216,21 @@ function cargarCarrito(){
 
 cargarCarrito()
 renderizarProductos()
+
+// FUNCION PARA MOSTRAR EL CARRITO
+function aparecerCarrito() {
+    const objeto = document.getElementById('toggle-cart');
+    const scrollY = window.scrollY || window.pageYOffset;
+  
+    if (scrollY >= 150) {
+      objeto.style.display = 'block';
+    } else {
+      objeto.style.display = 'none';
+    }
+  }
+  
+    // Agregar el evento de scroll
+    window.addEventListener('scroll', aparecerCarrito);
+
+    // Llamar a la función una vez para manejar el caso inicial
+    aparecerCarrito();
