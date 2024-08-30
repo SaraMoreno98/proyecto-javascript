@@ -191,7 +191,6 @@ hr{
 /* BANNER SLIDER */
     .slider{
         width: 100%;
-        max-width: 800px;
         height: 300px;
         overflow: hidden;
         border-radius: 10px;
@@ -200,6 +199,7 @@ hr{
 
     .slides{
         display: flex;
+        width: 100%;
         transition: transform 0.5s ease-in-out;
     }
 
