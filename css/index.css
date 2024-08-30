@@ -250,6 +250,65 @@ hr{
         color: var(--grey);
         font-weight: bold;
     }
+
+    /* PORTFOLIO SERVICIOS */
+    .trabajamos-web {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .paginas{
+        justify-content: center;
+        width: 250px;
+    }
+
+    .capturas{
+        width: 100%;
+        border-radius: 0.3rem;
+    }
+
+    .nombres_web{
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .lenguajes{        
+    margin-top: 16px;
+    font-size: medium;
+    font-weight: normal;
+    padding: 16px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 0;
+    border-radius: 24px;
+    }
+
+    .btn_visita{
+        cursor: pointer;
+        width: 80%;
+        margin-top: 8px;
+        margin-left: 10%;
+        padding: 10px;
+        display: inline-block;
+        background-color: var(--grey);
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 16px;
+    }
+
+    .btn_visita:hover{
+        color: var(--grey);
+        background-color: var(--yellow);
+        margin-left: 0%;
+        width: 100%;
+        transition: all 0.2s ease-in;
+    }
     
 /* CARRITO */
     .container {
