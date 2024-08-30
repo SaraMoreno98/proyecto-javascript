@@ -537,6 +537,12 @@ footer{
         background-color: var(--black);
     }
 
+/* SLIDER */
+    .slider{
+        height: 150px;
+    }
+
+
 /* ABOUT */
     .about {
         display: grid;
@@ -634,17 +640,7 @@ footer{
 
 /* RESPONSIVE MOVIL Y TABLET */
 @media screen and (max-width: 1023px){
-    /* SLIDER */
-    .slider{
-        width: 100%;
-        max-width: 800px;
-        height: 150px;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* SECTIONS SUB TITU */
+        /* SECTIONS SUB TITU */
     .sub_titu {
         display: grid;
         grid-template-columns: 1fr;
