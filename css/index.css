@@ -165,6 +165,11 @@ hr{
         grid-row-gap: 0px;
         }
 
+    .portfolioWeb_h4{
+        margin-bottom: 0px;
+
+    }
+
     .servicios_h4{
         margin-bottom: -30px;
     }
@@ -253,15 +258,19 @@ hr{
 
     /* PORTFOLIO SERVICIOS */
     .trabajamos-web {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
         justify-content: center;
         text-align: center;
     }
 
     .paginas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
         justify-content: center;
+    }
+
+    .paginas_card{
         width: 250px;
     }
 
@@ -600,7 +609,6 @@ footer{
     .slider{
         height: 150px;
     }
-
 
 /* ABOUT */
     .about {
